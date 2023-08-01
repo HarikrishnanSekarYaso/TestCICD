@@ -109,6 +109,8 @@ extension ViewController : UICollectionViewDataSource, UICollectionViewDelegate,
             return view
         default:
             assert(false,"Invalid element type")
+            return UICollectionReusableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+            
         }
         
     }
