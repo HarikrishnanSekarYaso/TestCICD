@@ -6,7 +6,9 @@
 //
 
 import UIKit
-
+import AppCenter
+import AppCenterCrashes
+import AppCenterAnalytics
 class ViewController: UIViewController {
     
     
@@ -18,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        AppCenter.start(withAppSecret: "784cd1aa-b410-433c-9088-06f85915b20e", services: [Crashes.self])
         self.test()
         
     }
